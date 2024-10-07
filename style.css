@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    gap: 20px; /* Added gap between the left and right part */
+  }
+  
+  /* Left and Right Parts */
+  .leftPart {
+    width: 50%;
+    height: 90vh;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #282c34;
+  }
+  
+  .rightPart {
+    width: 50%;
+    height: 90vh;
+    background-color: #f0f4c3;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Content */
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 15px;
+  }
+  
+  .leftPart .content label {
+    font-size: 1.2rem;
+    color: #fff;
+    background: #61dafb;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .leftPart .content textarea {
+    background: #1e1e1e;
+    color: #61dafb;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    outline: none;
+    height: 100%;
+    resize: none;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.3s ease;
+  }
+  
+  .leftPart .content textarea:focus {
+    border: 2px solid #61dafb;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Right Part (Output) */
+  .rightPart label {
+    font-size: 1.2rem;
+    color: #1e1e1e;
+    background: #61dafb;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .rightPart iframe {
+    display: block;
+    width: 100%;
+    border: 2px solid #61dafb;
+    border-radius: 10px;
+    height: calc(100% - 40px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Smooth Animations */
+  textarea, iframe {
+    transition: all 0.3s ease;
+  }
+  
+  textarea:hover, iframe:hover {
+    transform: scale(1.01);
+  }
+  
